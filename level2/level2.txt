@@ -1,0 +1,95 @@
+1. What is the DOM?
+
+   DOM stands for “Document Object Model”.
+   JavaScript use the DOM to manipulate and create elements in a HTML document.
+
+	
+	
+2. List three methods to manipulate the DOM.
+   innerHTML
+   createElement()
+   appendChild()
+
+   Example of all three in action: 
+	   var myElement = document.createElement(“p”);    // make P element 
+	   myElement.innerHTML = “Some Text”; 		       // insert “Some Text” to P element
+	   document.body.appendChild(myElement);           // Appends myElement to HTML body.
+
+3. What is an asynchronous call?
+
+   Normally your code will run sequentially from top to bottom. 
+   Exceptions are functions, which only run when they are called and global scope variables, which can get called from any position after they have been declared.
+   
+   A asynchronous function call operates in a different manner. It is kind of not part of your code. 
+   A asynchronous call will run in the “background”, giving permission to the rest of your code to run as normal. 
+   Asynchronous calls are great when you request data from outside sources or if one block of code is heavy and takes a lot of time.
+   functions that rely on values from the asynchronous call, will run when the data is available. This is done by using promises.
+
+
+4. Briefly explain what the sources tab in Chromes Developers Tools does.
+   The sources tab in Chromes Developer Tools gives you many options. 
+   It is used to:
+   1. View files.
+	  On the left hand side, all files of the website is listed.
+
+   2. Edit CSS and JavaScript.
+      CSS and javascript can be edited in the editor pane, located in the center of the devTool window.
+      CSS changes immediately in the browser, while javascript needs to be saved before any changes occur.
+
+
+   3. Create and save Snippets of JavaScript
+      Snippets is found in the same place as your files and can be run on any site.
+      Snippets work much like bookmarklets. You find the snippet you want, click run and the snippet in run in your console. 
+      This is great for quickly running code you use often, without the need to retype it every time.
+
+   4. Debug JavaScript.
+      instead of using console.log() to check if your code returns the expected values. You can use breakpoints in the  developer tools.
+      Breakpoints are created by clicking on the line number in the editor pane; And refreshing the browser to enter debug-mode.
+
+      Breakpoint automatically (like the name implies) sets a stopping place in your code. from there it is possible to step through your code,, one line at a time.
+      On the right hand side you can view your own breakpoints, quickly select event listener breakpoint, add “watches” and more. 
+      “Watches” can be used to quickly follow a variables value as it changes during the execution of the code.
+
+   5. Set up a Workspace.
+      All changes to your files in the sources panel disappear when you reload the website. By setting up a workspace all changes can be saved to your local files, and it is possible to use the developer tools as your code editor.
+
+5. What is a JavaScript promise?
+   A JavaScript promise is a proxy for a value. the value do not have to be known.
+   It lets you provide handlers with a asynchronous actions eventual success value or failure reasons. This lets the the asynchronous method to return values like a synchronous method. instead of returning a value right away, the promise can hold on to a value until it is call in the future.
+
+   A promise can have three states:
+   1. Pending
+      not yet resolved / Inprogress. 
+   2. Fulfilled
+      Task completed successfully.
+   3. Failure
+      Failed to complete task.
+
+6. What is an API?
+   API stands for “Application Programming Interface”, In web development an API is generally a set of code. 
+   The APIs code feature can be methods, properties, events and URLs.
+   The code is usually formatted in XML or JSON.
+   API’s can be used by the developer to interact with the client(browser), the users machine or third party websites and services(servers). 
+
+
+7. What is a JavaScript Event?
+   An event is a action taken in the browser window.
+   For each action(e.g click, scroll, hover) a signal of some kind is outputted.
+   Javascript can interact with these events using the DOM.
+   JavaScript can add, remove and change elements in the HTML document. 
+   But not in the CSS.
+
+
+8. What is event bubbling?
+   Event bubbling phase is one of two phases; bubbling and capturing.
+   Event bubbling is the opposite of event capturing. 
+   All modern browsers uses event bubbling by default.
+
+   When an event is run on an HTML element that has a parent element, the browser checks to see if its outermost element the <html> element has the same event handler.
+
+
+   If the event was a “click” event; the bubbling phase would start to check for a onclick event on the element that was clicked on, and work its way up the chain through each parent element, all the way up to the <html> element.
+
+
+
+
