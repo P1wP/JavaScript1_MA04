@@ -8,5 +8,7 @@ document.body.appendChild(button);
 
 // ADD EVENTLISTENER FOR BTN CLICK
 document.getElementById('myBtn').addEventListener('click', function () {
+    
     alert("YOU CLICKED THE BUTTON");    // ALERT WHEN BTN CLICKED
+    
 });

@@ -6,7 +6,7 @@
 	
 	
 2. List three methods to manipulate the DOM.
-   innerHTML
+   innerHTML = "something"
    createElement()
    appendChild()
 
